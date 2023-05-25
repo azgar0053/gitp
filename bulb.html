@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <script type="text/javascript">
+        function turnon() {
+            document.getElementById("heading").style.color="yellow";
+            document.getElementById("image").src ="bulbon.gif";
+         
+        
+        }
+        function turnoff() {
+            document.getElementById("heading").style.color="black";
+            document.getElementById("image").src ="bulboff.gif";
+        }
+    </script>
+</head>
+<body>
+    <div class="bulb" style="justify-content: center; align-items: center; display: flex; flex-direction:column; margin-top: 100px; ">
+        <h3 id="heading">Turn on and off the bulb by a click.</h3>
+    
+        <img src="/bulboff.gif" id="image"alt="">
+        <div class="swith" style="display: flex; margin: 25px; ">
+            <button style="margin: 10px"id="turnonid" onclick="turnon()">Turn On</button>
+            <button style="margin: 10px ;"   id="turnoffid" onclick="turnoff()">Turn Off</button>   
+        </div>
+    </div>
+</body>
+</html>
