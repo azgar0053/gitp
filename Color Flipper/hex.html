@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround Changer</title>
+    
+    <!-- ------------- CSS ---------->
+    <style>
+        body {
+            margin: 0;
+            background-color: red;
+        }
+        .nav{
+            background-color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-size: 38px;
+            box-shadow: 2px 2px 16px lightskyblue;
+            display:flex;
+            justify-content:space-evenly;        
+        }
+        .nav-link{
+            text-decoration: none;
+            color: rgb(110, 67, 67);
+            margin: 0;
+            padding: px;
+            text-shadow: 1px 1px 2px white, 0 0 25px rgb(93, 93, 157), 0 0 5px darkblue;
+        }
+        .container{        
+            text-align: center;            
+        }
+
+        .container>h2 {
+            margin-top: 16%;
+            margin-left: 36%;
+            padding: 20px;
+            width: 350px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(252, 249, 249);
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        #btn {
+            background-color: transparent;
+            color:darkgreen;
+            width: 120px;
+            height:30px;
+            font-size: 18px;
+            border-radius: 33px;
+        }
+        #btn:hover{
+            background-color: aliceblue;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px black;
+            transition: 0.7s;
+        }
+        #btn:active{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+    </style>
+
+</head>
+<body id="clr">
+    <nav class="nav">
+       <a class="nav-link" href="index.html">Background Color Changer</a>
+       <a class="nav-link"href="hex.html">Hex</a>
+    </nav>  
+    <div class="container">
+        
+        <h2>Color Name: <span class="colorN">Red</span></h2>
+        <button class="btn"id="btn" type="button">Click Me</button>
+    </div>
+<!------------ javascript --------------------->
+<script src="bg2.js"></script>
+</body>
+</html>
